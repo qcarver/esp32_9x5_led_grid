@@ -1,0 +1,23 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/qcarver/Dev/esp/9x5LedShield/build/bootloader/esp-idf/esptool_py && /home/qcarver/.espressif/python_env/idf5.2_py3.11_env/bin/python /home/qcarver/esp/v5.2.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/qcarver/Dev/esp/9x5LedShield/build/bootloader/bootloader.bin
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/9x5shield.c.obj
+/home/qcarver/Dev/esp/9x5LedShield/main/9x5shield.c: In function 'hw_init_led_gpios':
+/home/qcarver/Dev/esp/9x5LedShield/main/9x5shield.c:62:23: warning: iteration 5 invokes undefined behavior [-Waggressive-loop-optimizations]
+   62 |     gpio_reset_pin(row[c]);
+      |                    ~~~^~~
+/home/qcarver/Dev/esp/9x5LedShield/main/9x5shield.c:61:21: note: within this loop
+   61 |   for (int c = 0; c < NUM_COLUMNS_PER_SCREEN; c++){
+[5/9] Linking C static library esp-idf/main/libmain.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable 9x5LedShield.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/qcarver/Dev/esp/9x5LedShield/build/9x5LedShield.bin
+[9/9] cd /home/qcarver/Dev/esp/9x5LedShield/build/esp-idf/esptool_py && /home/qcarver/.espressif/python_env/idf5.2_py3.11_env/bin/python /home/qcarver/esp/v5.2.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/qcarver/Dev/esp/9x5LedShield/build/partition_table/partition-table.bin /home/qcarver/Dev/esp/9x5LedShield/build/9x5LedShield.bin
+9x5LedShield.bin binary size 0x2dee0 bytes. Smallest app partition is 0x100000 bytes. 0xd2120 bytes (82%) free.

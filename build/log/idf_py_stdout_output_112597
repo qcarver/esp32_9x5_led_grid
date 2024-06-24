@@ -1,0 +1,965 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Jun 18 2024 20:55:09[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a26ch ( 41580) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=0001a294 vaddr=3ffb0000 size=02294h (  8852) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=0001c530 vaddr=40080000 size=03ae8h ( 15080) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1519ch ( 86428) map[0m
+[0;32mI (162) esp_image: segment 4: paddr=000351c4 vaddr=40083ae8 size=08cdch ( 36060) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (194) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) cpu_start: Application information:[0m
+[0;32mI (206) cpu_start: Project name:     9x5LedShield[0m
+[0;32mI (211) cpu_start: App version:      1[0m
+[0;32mI (216) cpu_start: Compile time:     Jun 18 2024 20:55:04[0m
+[0;32mI (222) cpu_start: ELF file SHA256:  21d501bd8...[0m
+[0;32mI (227) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (232) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (237) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (242) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (260) heap_init: At 3FFB2C58 len 0002D3A8 (180 KiB): DRAM[0m
+[0;32mI (266) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (273) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (279) heap_init: At 4008C7C4 len 0001383C (78 KiB): IRAM[0m
+[0;32mI (287) spi_flash: detected chip: gd[0m
+[0;32mI (289) spi_flash: flash io: dio[0m
+[0;33mW (293) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (307) main_task: Started on CPU0[0m
+[0;32mI (317) main_task: Calling app_main()[0m
+[0;32mI (317) main: Starting app_main()[0m
+[0;32mI (317) 9x5shield: hw initting LED GPIOS[0m
+[0;32mI (317) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (327) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (337) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (347) gpio: GPIO[12]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (357) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (367) gpio: GPIO[22]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (377) gpio: GPIO[23]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (387) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (397) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (397) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (407) gpio: GPIO[16]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (417) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (427) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (437) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (447) 9x5shield: Creating Timer[0m
+[0;32mI (457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (457) 9x5shield: H[0m
+[0;32mI (457) 9x5shield: E[0m
+[0;32mI (467) 9x5shield: L[0m
+[0;32mI (467) 9x5shield: L[0m
+[0;32mI (467) 9x5shield: O[0m
+[0;32mI (477) 9x5shield:  [0m
+[0;32mI (477) 9x5shield: 9[0m
+[0;32mI (477) 9x5shield: X[0m
+[0;32mI (477) 9x5shield: 5[0m
+[0;32mI (487) 9x5shield:  [0m
+[0;32mI (487) 9x5shield: S[0m
+[0;32mI (487) 9x5shield: H[0m
+[0;32mI (497) 9x5shield: I[0m
+[0;32mI (497) 9x5shield: E[0m
+[0;32mI (497) 9x5shield: L[0m
+[0;32mI (497) 9x5shield: D[0m
+[0;32mI (507) 9x5shield: ![0m
+[0;32mI (4707) main: Repeating from top of main while loop[0m
+[0;32mI (4707) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4707) 9x5shield: H[0m
+[0;32mI (4707) 9x5shield: E[0m
+[0;32mI (4707) 9x5shield: L[0m
+[0;32mI (4707) 9x5shield: L[0m
+[0;32mI (4717) 9x5shield: O[0m
+[0;32mI (4717) 9x5shield:  [0m
+[0;32mI (4717) 9x5shield: 9[0m
+[0;32mI (4727) 9x5shield: X[0m
+[0;32mI (4727) 9x5shield: 5[0m
+[0;32mI (4727) 9x5shield:  [0m
+[0;32mI (4737) 9x5shield: S[0m
+[0;32mI (4737) 9x5shield: H[0m
+[0;32mI (4737) 9x5shield: I[0m
+[0;32mI (4737) 9x5shield: E[0m
+[0;32mI (4747) 9x5shield: L[0m
+[0;32mI (4747) 9x5shield: D[0m
+[0;32mI (4747) 9x5shield: ![0m
+[0;32mI (8957) main: Repeating from top of main while loop[0m
+[0;32mI (8957) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (8957) 9x5shield: H[0m
+[0;32mI (8957) 9x5shield: E[0m
+[0;32mI (8957) 9x5shield: L[0m
+[0;32mI (8957) 9x5shield: L[0m
+[0;32mI (8967) 9x5shield: O[0m
+[0;32mI (8967) 9x5shield:  [0m
+[0;32mI (8967) 9x5shield: 9[0m
+[0;32mI (8977) 9x5shield: X[0m
+[0;32mI (8977) 9x5shield: 5[0m
+[0;32mI (8977) 9x5shield:  [0m
+[0;32mI (8987) 9x5shield: S[0m
+[0;32mI (8987) 9x5shield: H[0m
+[0;32mI (8987) 9x5shield: I[0m
+[0;32mI (8987) 9x5shield: E[0m
+[0;32mI (8997) 9x5shield: L[0m
+[0;32mI (8997) 9x5shield: D[0m
+[0;32mI (8997) 9x5shield: ![0m
+[0;32mI (13207) main: Repeating from top of main while loop[0m
+[0;32mI (13207) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (13207) 9x5shield: H[0m
+[0;32mI (13207) 9x5shield: E[0m
+[0;32mI (13207) 9x5shield: L[0m
+[0;32mI (13207) 9x5shield: L[0m
+[0;32mI (13217) 9x5shield: O[0m
+[0;32mI (13217) 9x5shield:  [0m
+[0;32mI (13217) 9x5shield: 9[0m
+[0;32mI (13227) 9x5shield: X[0m
+[0;32mI (13227) 9x5shield: 5[0m
+[0;32mI (13227) 9x5shield:  [0m
+[0;32mI (13237) 9x5shield: S[0m
+[0;32mI (13237) 9x5shield: H[0m
+[0;32mI (13237) 9x5shield: I[0m
+[0;32mI (13247) 9x5shield: E[0m
+[0;32mI (13247) 9x5shield: L[0m
+[0;32mI (13247) 9x5shield: D[0m
+[0;32mI (13247) 9x5shield: ![0m
+[0;32mI (17457) main: Repeating from top of main while loop[0m
+[0;32mI (17457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (17457) 9x5shield: H[0m
+[0;32mI (17457) 9x5shield: E[0m
+[0;32mI (17457) 9x5shield: L[0m
+[0;32mI (17457) 9x5shield: L[0m
+[0;32mI (17467) 9x5shield: O[0m
+[0;32mI (17467) 9x5shield:  [0m
+[0;32mI (17467) 9x5shield: 9[0m
+[0;32mI (17477) 9x5shield: X[0m
+[0;32mI (17477) 9x5shield: 5[0m
+[0;32mI (17477) 9x5shield:  [0m
+[0;32mI (17487) 9x5shield: S[0m
+[0;32mI (17487) 9x5shield: H[0m
+[0;32mI (17487) 9x5shield: I[0m
+[0;32mI (17497) 9x5shield: E[0m
+[0;32mI (17497) 9x5shield: L[0m
+[0;32mI (17497) 9x5shield: D[0m
+[0;32mI (17497) 9x5shield: ![0m
+[0;32mI (21707) main: Repeating from top of main while loop[0m
+[0;32mI (21707) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (21707) 9x5shield: H[0m
+[0;32mI (21707) 9x5shield: E[0m
+[0;32mI (21707) 9x5shield: L[0m
+[0;32mI (21707) 9x5shield: L[0m
+[0;32mI (21717) 9x5shield: O[0m
+[0;32mI (21717) 9x5shield:  [0m
+[0;32mI (21717) 9x5shield: 9[0m
+[0;32mI (21727) 9x5shield: X[0m
+[0;32mI (21727) 9x5shield: 5[0m
+[0;32mI (21727) 9x5shield:  [0m
+[0;32mI (21737) 9x5shield: S[0m
+[0;32mI (21737) 9x5shield: H[0m
+[0;32mI (21737) 9x5shield: I[0m
+[0;32mI (21747) 9x5shield: E[0m
+[0;32mI (21747) 9x5shield: L[0m
+[0;32mI (21747) 9x5shield: D[0m
+[0;32mI (21747) 9x5shield: ![0m
+[0;32mI (25957) main: Repeating from top of main while loop[0m
+[0;32mI (25957) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (25957) 9x5shield: H[0m
+[0;32mI (25957) 9x5shield: E[0m
+[0;32mI (25957) 9x5shield: L[0m
+[0;32mI (25957) 9x5shield: L[0m
+[0;32mI (25967) 9x5shield: O[0m
+[0;32mI (25967) 9x5shield:  [0m
+[0;32mI (25967) 9x5shield: 9[0m
+[0;32mI (25977) 9x5shield: X[0m
+[0;32mI (25977) 9x5shield: 5[0m
+[0;32mI (25977) 9x5shield:  [0m
+[0;32mI (25987) 9x5shield: S[0m
+[0;32mI (25987) 9x5shield: H[0m
+[0;32mI (25987) 9x5shield: I[0m
+[0;32mI (25997) 9x5shield: E[0m
+[0;32mI (25997) 9x5shield: L[0m
+[0;32mI (25997) 9x5shield: D[0m
+[0;32mI (25997) 9x5shield: ![0m
+[0;32mI (30207) main: Repeating from top of main while loop[0m
+[0;32mI (30207) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (30207) 9x5shield: H[0m
+[0;32mI (30207) 9x5shield: E[0m
+[0;32mI (30207) 9x5shield: L[0m
+[0;32mI (30207) 9x5shield: L[0m
+[0;32mI (30217) 9x5shield: O[0m
+[0;32mI (30217) 9x5shield:  [0m
+[0;32mI (30217) 9x5shield: 9[0m
+[0;32mI (30227) 9x5shield: X[0m
+[0;32mI (30227) 9x5shield: 5[0m
+[0;32mI (30227) 9x5shield:  [0m
+[0;32mI (30237) 9x5shield: S[0m
+[0;32mI (30237) 9x5shield: H[0m
+[0;32mI (30237) 9x5shield: I[0m
+[0;32mI (30247) 9x5shield: E[0m
+[0;32mI (30247) 9x5shield: L[0m
+[0;32mI (30247) 9x5shield: D[0m
+[0;32mI (30247) 9x5shield: ![0m
+[0;32mI (34457) main: Repeating from top of main while loop[0m
+[0;32mI (34457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (34457) 9x5shield: H[0m
+[0;32mI (34457) 9x5shield: E[0m
+[0;32mI (34457) 9x5shield: L[0m
+[0;32mI (34457) 9x5shield: L[0m
+[0;32mI (34467) 9x5shield: O[0m
+[0;32mI (34467) 9x5shield:  [0m
+[0;32mI (34467) 9x5shield: 9[0m
+[0;32mI (34477) 9x5shield: X[0m
+[0;32mI (34477) 9x5shield: 5[0m
+[0;32mI (34477) 9x5shield:  [0m
+[0;32mI (34487) 9x5shield: S[0m
+[0;32mI (34487) 9x5shield: H[0m
+[0;32mI (34487) 9x5shield: I[0m
+[0;32mI (34497) 9x5shield: E[0m
+[0;32mI (34497) 9x5shield: L[0m
+[0;32mI (34497) 9x5shield: D[0m
+[0;32mI (34497) 9x5shield: ![0m
+[0;32mI (38707) main: Repeating from top of main while loop[0m
+[0;32mI (38707) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (38707) 9x5shield: H[0m
+[0;32mI (38707) 9x5shield: E[0m
+[0;32mI (38707) 9x5shield: L[0m
+[0;32mI (38707) 9x5shield: L[0m
+[0;32mI (38717) 9x5shield: O[0m
+[0;32mI (38717) 9x5shield:  [0m
+[0;32mI (38717) 9x5shield: 9[0m
+[0;32mI (38727) 9x5shield: X[0m
+[0;32mI (38727) 9x5shield: 5[0m
+[0;32mI (38727) 9x5shield:  [0m
+[0;32mI (38737) 9x5shield: S[0m
+[0;32mI (38737) 9x5shield: H[0m
+[0;32mI (38737) 9x5shield: I[0m
+[0;32mI (38747) 9x5shield: E[0m
+[0;32mI (38747) 9x5shield: L[0m
+[0;32mI (38747) 9x5shield: D[0m
+[0;32mI (38747) 9x5shield: ![0m
+[0;32mI (42957) main: Repeating from top of main while loop[0m
+[0;32mI (42957) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (42957) 9x5shield: H[0m
+[0;32mI (42957) 9x5shield: E[0m
+[0;32mI (42957) 9x5shield: L[0m
+[0;32mI (42957) 9x5shield: L[0m
+[0;32mI (42967) 9x5shield: O[0m
+[0;32mI (42967) 9x5shield:  [0m
+[0;32mI (42967) 9x5shield: 9[0m
+[0;32mI (42977) 9x5shield: X[0m
+[0;32mI (42977) 9x5shield: 5[0m
+[0;32mI (42977) 9x5shield:  [0m
+[0;32mI (42987) 9x5shield: S[0m
+[0;32mI (42987) 9x5shield: H[0m
+[0;32mI (42987) 9x5shield: I[0m
+[0;32mI (42997) 9x5shield: E[0m
+[0;32mI (42997) 9x5shield: L[0m
+[0;32mI (42997) 9x5shield: D[0m
+[0;32mI (42997) 9x5shield: ![0m
+[0;32mI (47207) main: Repeating from top of main while loop[0m
+[0;32mI (47207) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (47207) 9x5shield: H[0m
+[0;32mI (47207) 9x5shield: E[0m
+[0;32mI (47207) 9x5shield: L[0m
+[0;32mI (47207) 9x5shield: L[0m
+[0;32mI (47217) 9x5shield: O[0m
+[0;32mI (47217) 9x5shield:  [0m
+[0;32mI (47217) 9x5shield: 9[0m
+[0;32mI (47227) 9x5shield: X[0m
+[0;32mI (47227) 9x5shield: 5[0m
+[0;32mI (47227) 9x5shield:  [0m
+[0;32mI (47237) 9x5shield: S[0m
+[0;32mI (47237) 9x5shield: H[0m
+[0;32mI (47237) 9x5shield: I[0m
+[0;32mI (47247) 9x5shield: E[0m
+[0;32mI (47247) 9x5shield: L[0m
+[0;32mI (47247) 9x5shield: D[0m
+[0;32mI (47247) 9x5shield: ![0m
+[0;32mI (51457) main: Repeating from top of main while loop[0m
+[0;32mI (51457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (51457) 9x5shield: H[0m
+[0;32mI (51457) 9x5shield: E[0m
+[0;32mI (51457) 9x5shield: L[0m
+[0;32mI (51457) 9x5shield: L[0m
+[0;32mI (51467) 9x5shield: O[0m
+[0;32mI (51467) 9x5shield:  [0m
+[0;32mI (51467) 9x5shield: 9[0m
+[0;32mI (51477) 9x5shield: X[0m
+[0;32mI (51477) 9x5shield: 5[0m
+[0;32mI (51477) 9x5shield:  [0m
+[0;32mI (51487) 9x5shield: S[0m
+[0;32mI (51487) 9x5shield: H[0m
+[0;32mI (51487) 9x5shield: I[0m
+[0;32mI (51497) 9x5shield: E[0m
+[0;32mI (51497) 9x5shield: L[0m
+[0;32mI (51497) 9x5shield: D[0m
+[0;32mI (51497) 9x5shield: ![0m
+[0;32mI (55707) main: Repeating from top of main while loop[0m
+[0;32mI (55707) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (55707) 9x5shield: H[0m
+[0;32mI (55707) 9x5shield: E[0m
+[0;32mI (55707) 9x5shield: L[0m
+[0;32mI (55707) 9x5shield: L[0m
+[0;32mI (55717) 9x5shield: O[0m
+[0;32mI (55717) 9x5shield:  [0m
+[0;32mI (55717) 9x5shield: 9[0m
+[0;32mI (55727) 9x5shield: X[0m
+[0;32mI (55727) 9x5shield: 5[0m
+[0;32mI (55727) 9x5shield:  [0m
+[0;32mI (55737) 9x5shield: S[0m
+[0;32mI (55737) 9x5shield: H[0m
+[0;32mI (55737) 9x5shield: I[0m
+[0;32mI (55747) 9x5shield: E[0m
+[0;32mI (55747) 9x5shield: L[0m
+[0;32mI (55747) 9x5shield: D[0m
+[0;32mI (55747) 9x5shield: ![0m
+[0;32mI (59957) main: Repeating from top of main while loop[0m
+[0;32mI (59957) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (59957) 9x5shield: H[0m
+[0;32mI (59957) 9x5shield: E[0m
+[0;32mI (59957) 9x5shield: L[0m
+[0;32mI (59957) 9x5shield: L[0m
+[0;32mI (59967) 9x5shield: O[0m
+[0;32mI (59967) 9x5shield:  [0m
+[0;32mI (59967) 9x5shield: 9[0m
+[0;32mI (59977) 9x5shield: X[0m
+[0;32mI (59977) 9x5shield: 5[0m
+[0;32mI (59977) 9x5shield:  [0m
+[0;32mI (59987) 9x5shield: S[0m
+[0;32mI (59987) 9x5shield: H[0m
+[0;32mI (59987) 9x5shield: I[0m
+[0;32mI (59997) 9x5shield: E[0m
+[0;32mI (59997) 9x5shield: L[0m
+[0;32mI (59997) 9x5shield: D[0m
+[0;32mI (59997) 9x5shield: ![0m
+[0;32mI (64207) main: Repeating from top of main while loop[0m
+[0;32mI (64207) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (64207) 9x5shield: H[0m
+[0;32mI (64207) 9x5shield: E[0m
+[0;32mI (64207) 9x5shield: L[0m
+[0;32mI (64207) 9x5shield: L[0m
+[0;32mI (64217) 9x5shield: O[0m
+[0;32mI (64217) 9x5shield:  [0m
+[0;32mI (64217) 9x5shield: 9[0m
+[0;32mI (64227) 9x5shield: X[0m
+[0;32mI (64227) 9x5shield: 5[0m
+[0;32mI (64227) 9x5shield:  [0m
+[0;32mI (64237) 9x5shield: S[0m
+[0;32mI (64237) 9x5shield: H[0m
+[0;32mI (64237) 9x5shield: I[0m
+[0;32mI (64247) 9x5shield: E[0m
+[0;32mI (64247) 9x5shield: L[0m
+[0;32mI (64247) 9x5shield: D[0m
+[0;32mI (64247) 9x5shield: ![0m
+[0;32mI (68457) main: Repeating from top of main while loop[0m
+[0;32mI (68457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (68457) 9x5shield: H[0m
+[0;32mI (68457) 9x5shield: E[0m
+[0;32mI (68457) 9x5shield: L[0m
+[0;32mI (68457) 9x5shield: L[0m
+[0;32mI (68467) 9x5shield: O[0m
+[0;32mI (68467) 9x5shield:  [0m
+[0;32mI (68467) 9x5shield: 9[0m
+[0;32mI (68477) 9x5shield: X[0m
+[0;32mI (68477) 9x5shield: 5[0m
+[0;32mI (68477) 9x5shield:  [0m
+[0;32mI (68487) 9x5shield: S[0m
+[0;32mI (68487) 9x5shield: H[0m
+[0;32mI (68487) 9x5shield: I[0m
+[0;32mI (68497) 9x5shield: E[0m
+[0;32mI (68497) 9x5shield: L[0m
+[0;32mI (68497) 9x5shield: D[0m
+[0;32mI (68497) 9x5shield: ![0m
+[0;32mI (72707) main: Repeating from top of main while loop[0m
+[0;32mI (72707) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (72707) 9x5shield: H[0m
+[0;32mI (72707) 9x5shield: E[0m
+[0;32mI (72707) 9x5shield: L[0m
+[0;32mI (72707) 9x5shield: L[0m
+[0;32mI (72717) 9x5shield: O[0m
+[0;32mI (72717) 9x5shield:  [0m
+[0;32mI (72717) 9x5shield: 9[0m
+[0;32mI (72727) 9x5shield: X[0m
+[0;32mI (72727) 9x5shield: 5[0m
+[0;32mI (72727) 9x5shield:  [0m
+[0;32mI (72737) 9x5shield: S[0m
+[0;32mI (72737) 9x5shield: H[0m
+[0;32mI (72737) 9x5shield: I[0m
+[0;32mI (72747) 9x5shield: E[0m
+[0;32mI (72747) 9x5shield: L[0m
+[0;32mI (72747) 9x5shield: D[0m
+[0;32mI (72747) 9x5shield: ![0m
+[0;32mI (76957) main: Repeating from top of main while loop[0m
+[0;32mI (76957) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (76957) 9x5shield: H[0m
+[0;32mI (76957) 9x5shield: E[0m
+[0;32mI (76957) 9x5shield: L[0m
+[0;32mI (76957) 9x5shield: L[0m
+[0;32mI (76967) 9x5shield: O[0m
+[0;32mI (76967) 9x5shield:  [0m
+[0;32mI (76967) 9x5shield: 9[0m
+[0;32mI (76977) 9x5shield: X[0m
+[0;32mI (76977) 9x5shield: 5[0m
+[0;32mI (76977) 9x5shield:  [0m
+[0;32mI (76987) 9x5shield: S[0m
+[0;32mI (76987) 9x5shield: H[0m
+[0;32mI (76987) 9x5shield: I[0m
+[0;32mI (76997) 9x5shield: E[0m
+[0;32mI (76997) 9x5shield: L[0m
+[0;32mI (76997) 9x5shield: D[0m
+[0;32mI (76997) 9x5shield: ![0m
+[0;32mI (81207) main: Repeating from top of main while loop[0m
+[0;32mI (81207) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (81207) 9x5shield: H[0m
+[0;32mI (81207) 9x5shield: E[0m
+[0;32mI (81207) 9x5shield: L[0m
+[0;32mI (81207) 9x5shield: L[0m
+[0;32mI (81217) 9x5shield: O[0m
+[0;32mI (81217) 9x5shield:  [0m
+[0;32mI (81217) 9x5shield: 9[0m
+[0;32mI (81227) 9x5shield: X[0m
+[0;32mI (81227) 9x5shield: 5[0m
+[0;32mI (81227) 9x5shield:  [0m
+[0;32mI (81237) 9x5shield: S[0m
+[0;32mI (81237) 9x5shield: H[0m
+[0;32mI (81237) 9x5shield: I[0m
+[0;32mI (81247) 9x5shield: E[0m
+[0;32mI (81247) 9x5shield: L[0m
+[0;32mI (81247) 9x5shield: D[0m
+[0;32mI (81247) 9x5shield: ![0m
+[0;32mI (85457) main: Repeating from top of main while loop[0m
+[0;32mI (85457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (85457) 9x5shield: H[0m
+[0;32mI (85457) 9x5shield: E[0m
+[0;32mI (85457) 9x5shield: L[0m
+[0;32mI (85457) 9x5shield: L[0m
+[0;32mI (85467) 9x5shield: O[0m
+[0;32mI (85467) 9x5shield:  [0m
+[0;32mI (85467) 9x5shield: 9[0m
+[0;32mI (85477) 9x5shield: X[0m
+[0;32mI (85477) 9x5shield: 5[0m
+[0;32mI (85477) 9x5shield:  [0m
+[0;32mI (85487) 9x5shield: S[0m
+[0;32mI (85487) 9x5shield: H[0m
+[0;32mI (85487) 9x5shield: I[0m
+[0;32mI (85497) 9x5shield: E[0m
+[0;32mI (85497) 9x5shield: L[0m
+[0;32mI (85497) 9x5shield: D[0m
+[0;32mI (85497) 9x5shield: ![0m
+[0;32mI (89707) main: Repeating from top of main while loop[0m
+[0;32mI (89707) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (89707) 9x5shield: H[0m
+[0;32mI (89707) 9x5shield: E[0m
+[0;32mI (89707) 9x5shield: L[0m
+[0;32mI (89707) 9x5shield: L[0m
+[0;32mI (89717) 9x5shield: O[0m
+[0;32mI (89717) 9x5shield:  [0m
+[0;32mI (89717) 9x5shield: 9[0m
+[0;32mI (89727) 9x5shield: X[0m
+[0;32mI (89727) 9x5shield: 5[0m
+[0;32mI (89727) 9x5shield:  [0m
+[0;32mI (89737) 9x5shield: S[0m
+[0;32mI (89737) 9x5shield: H[0m
+[0;32mI (89737) 9x5shield: I[0m
+[0;32mI (89747) 9x5shield: E[0m
+[0;32mI (89747) 9x5shield: L[0m
+[0;32mI (89747) 9x5shield: D[0m
+[0;32mI (89747) 9x5shield: ![0m
+[0;32mI (93957) main: Repeating from top of main while loop[0m
+[0;32mI (93957) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (93957) 9x5shield: H[0m
+[0;32mI (93957) 9x5shield: E[0m
+[0;32mI (93957) 9x5shield: L[0m
+[0;32mI (93957) 9x5shield: L[0m
+[0;32mI (93967) 9x5shield: O[0m
+[0;32mI (93967) 9x5shield:  [0m
+[0;32mI (93967) 9x5shield: 9[0m
+[0;32mI (93977) 9x5shield: X[0m
+[0;32mI (93977) 9x5shield: 5[0m
+[0;32mI (93977) 9x5shield:  [0m
+[0;32mI (93987) 9x5shield: S[0m
+[0;32mI (93987) 9x5shield: H[0m
+[0;32mI (93987) 9x5shield: I[0m
+[0;32mI (93997) 9x5shield: E[0m
+[0;32mI (93997) 9x5shield: L[0m
+[0;32mI (93997) 9x5shield: D[0m
+[0;32mI (93997) 9x5shield: ![0m
+[0;32mI (98207) main: Repeating from top of main while loop[0m
+[0;32mI (98207) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (98207) 9x5shield: H[0m
+[0;32mI (98207) 9x5shield: E[0m
+[0;32mI (98207) 9x5shield: L[0m
+[0;32mI (98207) 9x5shield: L[0m
+[0;32mI (98217) 9x5shield: O[0m
+[0;32mI (98217) 9x5shield:  [0m
+[0;32mI (98217) 9x5shield: 9[0m
+[0;32mI (98227) 9x5shield: X[0m
+[0;32mI (98227) 9x5shield: 5[0m
+[0;32mI (98227) 9x5shield:  [0m
+[0;32mI (98237) 9x5shield: S[0m
+[0;32mI (98237) 9x5shield: H[0m
+[0;32mI (98237) 9x5shield: I[0m
+[0;32mI (98247) 9x5shield: E[0m
+[0;32mI (98247) 9x5shield: L[0m
+[0;32mI (98247) 9x5shield: D[0m
+[0;32mI (98247) 9x5shield: ![0m
+[0;32mI (102457) main: Repeating from top of main while loop[0m
+[0;32mI (102457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (102457) 9x5shield: H[0m
+[0;32mI (102457) 9x5shield: E[0m
+[0;32mI (102457) 9x5shield: L[0m
+[0;32mI (102467) 9x5shield: L[0m
+[0;32mI (102467) 9x5shield: O[0m
+[0;32mI (102467) 9x5shield:  [0m
+[0;32mI (102467) 9x5shield: 9[0m
+[0;32mI (102477) 9x5shield: X[0m
+[0;32mI (102477) 9x5shield: 5[0m
+[0;32mI (102477) 9x5shield:  [0m
+[0;32mI (102487) 9x5shield: S[0m
+[0;32mI (102487) 9x5shield: H[0m
+[0;32mI (102487) 9x5shield: I[0m
+[0;32mI (102497) 9x5shield: E[0m
+[0;32mI (102497) 9x5shield: L[0m
+[0;32mI (102497) 9x5shield: D[0m
+[0;32mI (102507) 9x5shield: ![0m
+[0;32mI (106707) main: Repeating from top of main while loop[0m
+[0;32mI (106707) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (106707) 9x5shield: H[0m
+[0;32mI (106707) 9x5shield: E[0m
+[0;32mI (106707) 9x5shield: L[0m
+[0;32mI (106717) 9x5shield: L[0m
+[0;32mI (106717) 9x5shield: O[0m
+[0;32mI (106717) 9x5shield:  [0m
+[0;32mI (106717) 9x5shield: 9[0m
+[0;32mI (106727) 9x5shield: X[0m
+[0;32mI (106727) 9x5shield: 5[0m
+[0;32mI (106727) 9x5shield:  [0m
+[0;32mI (106737) 9x5shield: S[0m
+[0;32mI (106737) 9x5shield: H[0m
+[0;32mI (106737) 9x5shield: I[0m
+[0;32mI (106747) 9x5shield: E[0m
+[0;32mI (106747) 9x5shield: L[0m
+[0;32mI (106747) 9x5shield: D[0m
+[0;32mI (106757) 9x5shield: ![0m
+[0;32mI (110957) main: Repeating from top of main while loop[0m
+[0;32mI (110957) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (110957) 9x5shield: H[0m
+[0;32mI (110957) 9x5shield: E[0m
+[0;32mI (110957) 9x5shield: L[0m
+[0;32mI (110967) 9x5shield: L[0m
+[0;32mI (110967) 9x5shield: O[0m
+[0;32mI (110967) 9x5shield:  [0m
+[0;32mI (110967) 9x5shield: 9[0m
+[0;32mI (110977) 9x5shield: X[0m
+[0;32mI (110977) 9x5shield: 5[0m
+[0;32mI (110977) 9x5shield:  [0m
+[0;32mI (110987) 9x5shield: S[0m
+[0;32mI (110987) 9x5shield: H[0m
+[0;32mI (110987) 9x5shield: I[0m
+[0;32mI (110997) 9x5shield: E[0m
+[0;32mI (110997) 9x5shield: L[0m
+[0;32mI (110997) 9x5shield: D[0m
+[0;32mI (111007) 9x5shield: ![0m
+[0;32mI (115207) main: Repeating from top of main while loop[0m
+[0;32mI (115207) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (115207) 9x5shield: H[0m
+[0;32mI (115207) 9x5shield: E[0m
+[0;32mI (115207) 9x5shield: L[0m
+[0;32mI (115217) 9x5shield: L[0m
+[0;32mI (115217) 9x5shield: O[0m
+[0;32mI (115217) 9x5shield:  [0m
+[0;32mI (115217) 9x5shield: 9[0m
+[0;32mI (115227) 9x5shield: X[0m
+[0;32mI (115227) 9x5shield: 5[0m
+[0;32mI (115227) 9x5shield:  [0m
+[0;32mI (115237) 9x5shield: S[0m
+[0;32mI (115237) 9x5shield: H[0m
+[0;32mI (115237) 9x5shield: I[0m
+[0;32mI (115247) 9x5shield: E[0m
+[0;32mI (115247) 9x5shield: L[0m
+[0;32mI (115247) 9x5shield: D[0m
+[0;32mI (115257) 9x5shield: ![0m
+[0;32mI (119457) main: Repeating from top of main while loop[0m
+[0;32mI (119457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (119457) 9x5shield: H[0m
+[0;32mI (119457) 9x5shield: E[0m
+[0;32mI (119457) 9x5shield: L[0m
+[0;32mI (119467) 9x5shield: L[0m
+[0;32mI (119467) 9x5shield: O[0m
+[0;32mI (119467) 9x5shield:  [0m
+[0;32mI (119467) 9x5shield: 9[0m
+[0;32mI (119477) 9x5shield: X[0m
+[0;32mI (119477) 9x5shield: 5[0m
+[0;32mI (119477) 9x5shield:  [0m
+[0;32mI (119487) 9x5shield: S[0m
+[0;32mI (119487) 9x5shield: H[0m
+[0;32mI (119487) 9x5shield: I[0m
+[0;32mI (119497) 9x5shield: E[0m
+[0;32mI (119497) 9x5shield: L[0m
+[0;32mI (119497) 9x5shield: D[0m
+[0;32mI (119507) 9x5shield: ![0m
+[0;32mI (123707) main: Repeating from top of main while loop[0m
+[0;32mI (123707) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (123707) 9x5shield: H[0m
+[0;32mI (123707) 9x5shield: E[0m
+[0;32mI (123707) 9x5shield: L[0m
+[0;32mI (123717) 9x5shield: L[0m
+[0;32mI (123717) 9x5shield: O[0m
+[0;32mI (123717) 9x5shield:  [0m
+[0;32mI (123717) 9x5shield: 9[0m
+[0;32mI (123727) 9x5shield: X[0m
+[0;32mI (123727) 9x5shield: 5[0m
+[0;32mI (123727) 9x5shield:  [0m
+[0;32mI (123737) 9x5shield: S[0m
+[0;32mI (123737) 9x5shield: H[0m
+[0;32mI (123737) 9x5shield: I[0m
+[0;32mI (123747) 9x5shield: E[0m
+[0;32mI (123747) 9x5shield: L[0m
+[0;32mI (123747) 9x5shield: D[0m
+[0;32mI (123757) 9x5shield: ![0m
+[0;32mI (127957) main: Repeating from top of main while loop[0m
+[0;32mI (127957) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (127957) 9x5shield: H[0m
+[0;32mI (127957) 9x5shield: E[0m
+[0;32mI (127957) 9x5shield: L[0m
+[0;32mI (127967) 9x5shield: L[0m
+[0;32mI (127967) 9x5shield: O[0m
+[0;32mI (127967) 9x5shield:  [0m
+[0;32mI (127967) 9x5shield: 9[0m
+[0;32mI (127977) 9x5shield: X[0m
+[0;32mI (127977) 9x5shield: 5[0m
+[0;32mI (127977) 9x5shield:  [0m
+[0;32mI (127987) 9x5shield: S[0m
+[0;32mI (127987) 9x5shield: H[0m
+[0;32mI (127987) 9x5shield: I[0m
+[0;32mI (127997) 9x5shield: E[0m
+[0;32mI (127997) 9x5shield: L[0m
+[0;32mI (127997) 9x5shield: D[0m
+[0;32mI (128007) 9x5shield: ![0m
+[0;32mI (132207) main: Repeating from top of main while loop[0m
+[0;32mI (132207) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (132207) 9x5shield: H[0m
+[0;32mI (132207) 9x5shield: E[0m
+[0;32mI (132207) 9x5shield: L[0m
+[0;32mI (132217) 9x5shield: L[0m
+[0;32mI (132217) 9x5shield: O[0m
+[0;32mI (132217) 9x5shield:  [0m
+[0;32mI (132217) 9x5shield: 9[0m
+[0;32mI (132227) 9x5shield: X[0m
+[0;32mI (132227) 9x5shield: 5[0m
+[0;32mI (132227) 9x5shield:  [0m
+[0;32mI (132237) 9x5shield: S[0m
+[0;32mI (132237) 9x5shield: H[0m
+[0;32mI (132237) 9x5shield: I[0m
+[0;32mI (132247) 9x5shield: E[0m
+[0;32mI (132247) 9x5shield: L[0m
+[0;32mI (132247) 9x5shield: D[0m
+[0;32mI (132257) 9x5shield: ![0m
+[0;32mI (136457) main: Repeating from top of main while loop[0m
+[0;32mI (136457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (136457) 9x5shield: H[0m
+[0;32mI (136457) 9x5shield: E[0m
+[0;32mI (136457) 9x5shield: L[0m
+[0;32mI (136467) 9x5shield: L[0m
+[0;32mI (136467) 9x5shield: O[0m
+[0;32mI (136467) 9x5shield:  [0m
+[0;32mI (136467) 9x5shield: 9[0m
+[0;32mI (136477) 9x5shield: X[0m
+[0;32mI (136477) 9x5shield: 5[0m
+[0;32mI (136477) 9x5shield:  [0m
+[0;32mI (136487) 9x5shield: S[0m
+[0;32mI (136487) 9x5shield: H[0m
+[0;32mI (136487) 9x5shield: I[0m
+[0;32mI (136497) 9x5shield: E[0m
+[0;32mI (136497) 9x5shield: L[0m
+[0;32mI (136497) 9x5shield: D[0m
+[0;32mI (136507) 9x5shield: ![0m
+[0;32mI (140707) main: Repeating from top of main while loop[0m
+[0;32mI (140707) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (140707) 9x5shield: H[0m
+[0;32mI (140707) 9x5shield: E[0m
+[0;32mI (140707) 9x5shield: L[0m
+[0;32mI (140717) 9x5shield: L[0m
+[0;32mI (140717) 9x5shield: O[0m
+[0;32mI (140717) 9x5shield:  [0m
+[0;32mI (140717) 9x5shield: 9[0m
+[0;32mI (140727) 9x5shield: X[0m
+[0;32mI (140727) 9x5shield: 5[0m
+[0;32mI (140727) 9x5shield:  [0m
+[0;32mI (140737) 9x5shield: S[0m
+[0;32mI (140737) 9x5shield: H[0m
+[0;32mI (140737) 9x5shield: I[0m
+[0;32mI (140747) 9x5shield: E[0m
+[0;32mI (140747) 9x5shield: L[0m
+[0;32mI (140747) 9x5shield: D[0m
+[0;32mI (140757) 9x5shield: ![0m
+[0;32mI (144957) main: Repeating from top of main while loop[0m
+[0;32mI (144957) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (144957) 9x5shield: H[0m
+[0;32mI (144957) 9x5shield: E[0m
+[0;32mI (144957) 9x5shield: L[0m
+[0;32mI (144967) 9x5shield: L[0m
+[0;32mI (144967) 9x5shield: O[0m
+[0;32mI (144967) 9x5shield:  [0m
+[0;32mI (144967) 9x5shield: 9[0m
+[0;32mI (144977) 9x5shield: X[0m
+[0;32mI (144977) 9x5shield: 5[0m
+[0;32mI (144977) 9x5shield:  [0m
+[0;32mI (144987) 9x5shield: S[0m
+[0;32mI (144987) 9x5shield: H[0m
+[0;32mI (144987) 9x5shield: I[0m
+[0;32mI (144997) 9x5shield: E[0m
+[0;32mI (144997) 9x5shield: L[0m
+[0;32mI (144997) 9x5shield: D[0m
+[0;32mI (145007) 9x5shield: ![0m
+[0;32mI (149207) main: Repeating from top of main while loop[0m
+[0;32mI (149207) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (149207) 9x5shield: H[0m
+[0;32mI (149207) 9x5shield: E[0m
+[0;32mI (149207) 9x5shield: L[0m
+[0;32mI (149217) 9x5shield: L[0m
+[0;32mI (149217) 9x5shield: O[0m
+[0;32mI (149217) 9x5shield:  [0m
+[0;32mI (149217) 9x5shield: 9[0m
+[0;32mI (149227) 9x5shield: X[0m
+[0;32mI (149227) 9x5shield: 5[0m
+[0;32mI (149227) 9x5shield:  [0m
+[0;32mI (149237) 9x5shield: S[0m
+[0;32mI (149237) 9x5shield: H[0m
+[0;32mI (149237) 9x5shield: I[0m
+[0;32mI (149247) 9x5shield: E[0m
+[0;32mI (149247) 9x5shield: L[0m
+[0;32mI (149247) 9x5shield: D[0m
+[0;32mI (149257) 9x5shield: ![0m
+[0;32mI (153457) main: Repeating from top of main while loop[0m
+[0;32mI (153457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (153457) 9x5shield: H[0m
+[0;32mI (153457) 9x5shield: E[0m
+[0;32mI (153457) 9x5shield: L[0m
+[0;32mI (153467) 9x5shield: L[0m
+[0;32mI (153467) 9x5shield: O[0m
+[0;32mI (153467) 9x5shield:  [0m
+[0;32mI (153467) 9x5shield: 9[0m
+[0;32mI (153477) 9x5shield: X[0m
+[0;32mI (153477) 9x5shield: 5[0m
+[0;32mI (153477) 9x5shield:  [0m
+[0;32mI (153487) 9x5shield: S[0m
+[0;32mI (153487) 9x5shield: H[0m
+[0;32mI (153487) 9x5shield: I[0m
+[0;32mI (153497) 9x5shield: E[0m
+[0;32mI (153497) 9x5shield: L[0m
+[0;32mI (153497) 9x5shield: D[0m
+[0;32mI (153507) 9x5shield: ![0m
+[0;32mI (157707) main: Repeating from top of main while loop[0m
+[0;32mI (157707) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (157707) 9x5shield: H[0m
+[0;32mI (157707) 9x5shield: E[0m
+[0;32mI (157707) 9x5shield: L[0m
+[0;32mI (157717) 9x5shield: L[0m
+[0;32mI (157717) 9x5shield: O[0m
+[0;32mI (157717) 9x5shield:  [0m
+[0;32mI (157717) 9x5shield: 9[0m
+[0;32mI (157727) 9x5shield: X[0m
+[0;32mI (157727) 9x5shield: 5[0m
+[0;32mI (157727) 9x5shield:  [0m
+[0;32mI (157737) 9x5shield: S[0m
+[0;32mI (157737) 9x5shield: H[0m
+[0;32mI (157737) 9x5shield: I[0m
+[0;32mI (157747) 9x5shield: E[0m
+[0;32mI (157747) 9x5shield: L[0m
+[0;32mI (157747) 9x5shield: D[0m
+[0;32mI (157757) 9x5shield: ![0m
+[0;32mI (161957) main: Repeating from top of main while loop[0m
+[0;32mI (161957) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (161957) 9x5shield: H[0m
+[0;32mI (161957) 9x5shield: E[0m
+[0;32mI (161957) 9x5shield: L[0m
+[0;32mI (161967) 9x5shield: L[0m
+[0;32mI (161967) 9x5shield: O[0m
+[0;32mI (161967) 9x5shield:  [0m
+[0;32mI (161967) 9x5shield: 9[0m
+[0;32mI (161977) 9x5shield: X[0m
+[0;32mI (161977) 9x5shield: 5[0m
+[0;32mI (161977) 9x5shield:  [0m
+[0;32mI (161987) 9x5shield: S[0m
+[0;32mI (161987) 9x5shield: H[0m
+[0;32mI (161987) 9x5shield: I[0m
+[0;32mI (161997) 9x5shield: E[0m
+[0;32mI (161997) 9x5shield: L[0m
+[0;32mI (161997) 9x5shield: D[0m
+[0;32mI (162007) 9x5shield: ![0m
+[0;32mI (166207) main: Repeating from top of main while loop[0m
+[0;32mI (166207) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (166207) 9x5shield: H[0m
+[0;32mI (166207) 9x5shield: E[0m
+[0;32mI (166207) 9x5shield: L[0m
+[0;32mI (166217) 9x5shield: L[0m
+[0;32mI (166217) 9x5shield: O[0m
+[0;32mI (166217) 9x5shield:  [0m
+[0;32mI (166217) 9x5shield: 9[0m
+[0;32mI (166227) 9x5shield: X[0m
+[0;32mI (166227) 9x5shield: 5[0m
+[0;32mI (166227) 9x5shield:  [0m
+[0;32mI (166237) 9x5shield: S[0m
+[0;32mI (166237) 9x5shield: H[0m
+[0;32mI (166237) 9x5shield: I[0m
+[0;32mI (166247) 9x5shield: E[0m
+[0;32mI (166247) 9x5shield: L[0m
+[0;32mI (166247) 9x5shield: D[0m
+[0;32mI (166257) 9x5shield: ![0m
+[0;32mI (170457) main: Repeating from top of main while loop[0m
+[0;32mI (170457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (170457) 9x5shield: H[0m
+[0;32mI (170457) 9x5shield: E[0m
+[0;32mI (170457) 9x5shield: L[0m
+[0;32mI (170467) 9x5shield: L[0m
+[0;32mI (170467) 9x5shield: O[0m
+[0;32mI (170467) 9x5shield:  [0m
+[0;32mI (170467) 9x5shield: 9[0m
+[0;32mI (170477) 9x5shield: X[0m
+[0;32mI (170477) 9x5shield: 5[0m
+[0;32mI (170477) 9x5shield:  [0m
+[0;32mI (170487) 9x5shield: S[0m
+[0;32mI (170487) 9x5shield: H[0m
+[0;32mI (170487) 9x5shield: I[0m
+[0;32mI (170497) 9x5shield: E[0m
+[0;32mI (170497) 9x5shield: L[0m
+[0;32mI (170497) 9x5shield: D[0m
+[0;32mI (170507) 9x5shield: ![0m
+[0;32mI (174707) main: Repeating from top of main while loop[0m
+[0;32mI (174707) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (174707) 9x5shield: H[0m
+[0;32mI (174707) 9x5shield: E[0m
+[0;32mI (174707) 9x5shield: L[0m
+[0;32mI (174717) 9x5shield: L[0m
+[0;32mI (174717) 9x5shield: O[0m
+[0;32mI (174717) 9x5shield:  [0m
+[0;32mI (174717) 9x5shield: 9[0m
+[0;32mI (174727) 9x5shield: X[0m
+[0;32mI (174727) 9x5shield: 5[0m
+[0;32mI (174727) 9x5shield:  [0m
+[0;32mI (174737) 9x5shield: S[0m
+[0;32mI (174737) 9x5shield: H[0m
+[0;32mI (174737) 9x5shield: I[0m
+[0;32mI (174747) 9x5shield: E[0m
+[0;32mI (174747) 9x5shield: L[0m
+[0;32mI (174747) 9x5shield: D[0m
+[0;32mI (174757) 9x5shield: ![0m
+[0;32mI (178957) main: Repeating from top of main while loop[0m
+[0;32mI (178957) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (178957) 9x5shield: H[0m
+[0;32mI (178957) 9x5shield: E[0m
+[0;32mI (178957) 9x5shield: L[0m
+[0;32mI (178967) 9x5shield: L[0m
+[0;32mI (178967) 9x5shield: O[0m
+[0;32mI (178967) 9x5shield:  [0m
+[0;32mI (178967) 9x5shield: 9[0m
+[0;32mI (178977) 9x5shield: X[0m
+[0;32mI (178977) 9x5shield: 5[0m
+[0;32mI (178977) 9x5shield:  [0m
+[0;32mI (178987) 9x5shield: S[0m
+[0;32mI (178987) 9x5shield: H[0m
+[0;32mI (178987) 9x5shield: I[0m
+[0;32mI (178997) 9x5shield: E[0m
+[0;32mI (178997) 9x5shield: L[0m
+[0;32mI (178997) 9x5shield: D[0m
+[0;32mI (179007) 9x5shield: ![0m
+[0;32mI (183207) main: Repeating from top of main while loop[0m
+[0;32mI (183207) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (183207) 9x5shield: H[0m
+[0;32mI (183207) 9x5shield: E[0m
+[0;32mI (183207) 9x5shield: L[0m
+[0;32mI (183217) 9x5shield: L[0m
+[0;32mI (183217) 9x5shield: O[0m
+[0;32mI (183217) 9x5shield:  [0m
+[0;32mI (183217) 9x5shield: 9[0m
+[0;32mI (183227) 9x5shield: X[0m
+[0;32mI (183227) 9x5shield: 5[0m
+[0;32mI (183227) 9x5shield:  [0m
+[0;32mI (183237) 9x5shield: S[0m
+[0;32mI (183237) 9x5shield: H[0m
+[0;32mI (183237) 9x5shield: I[0m
+[0;32mI (183247) 9x5shield: E[0m
+[0;32mI (183247) 9x5shield: L[0m
+[0;32mI (183247) 9x5shield: D[0m
+[0;32mI (183257) 9x5shield: ![0m
+[0;32mI (187457) main: Repeating from top of main while loop[0m
+[0;32mI (187457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (187457) 9x5shield: H[0m
+[0;32mI (187457) 9x5shield: E[0m
+[0;32mI (187457) 9x5shield: L[0m
+[0;32mI (187467) 9x5shield: L[0m
+[0;32mI (187467) 9x5shield: O[0m
+[0;32mI (187467) 9x5shield:  [0m
+[0;32mI (187467) 9x5shield: 9[0m
+[0;32mI (187477) 9x5shield: X[0m
+[0;32mI (187477) 9x5shield: 5[0m
+[0;32mI (187477) 9x5shield:  [0m
+[0;32mI (187487) 9x5shield: S[0m
+[0;32mI (187487) 9x5shield: H[0m
+[0;32mI (187487) 9x5shield: I[0m
+[0;32mI (187497) 9x5shield: E[0m
+[0;32mI (187497) 9x5shield: L[0m
+[0;32mI (187497) 9x5shield: D[0m
+[0;32mI (187507) 9x5shield: ![0m
+[0;32mI (191707) main: Repeating from top of main while loop[0m
+[0;32mI (191707) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (191707) 9x5shield: H[0m
+[0;32mI (191707) 9x5shield: E[0m
+[0;32mI (191707) 9x5shield: L[0m
+[0;32mI (191717) 9x5shield: L[0m
+[0;32mI (191717) 9x5shield: O[0m
+[0;32mI (191717) 9x5shield:  [0m
+[0;32mI (191717) 9x5shield: 9[0m
+[0;32mI (191727) 9x5shield: X[0m
+[0;32mI (191727) 9x5shield: 5[0m
+[0;32mI (191727) 9x5shield:  [0m
+[0;32mI (191737) 9x5shield: S[0m
+[0;32mI (191737) 9x5shield: H[0m
+[0;32mI (191737) 9x5shield: I[0m
+[0;32mI (191747) 9x5shield: E[0m
+[0;32mI (191747) 9x5shield: L[0m
+[0;32mI (191747) 9x5shield: D[0m
+[0;32mI (191757) 9x5shield: ![0m
+[0;32mI (195957) main: Repeating from top of main while loop[0m
+[0;32mI (195957) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (195957) 9x5shield: H[0m
+[0;32mI (195957) 9x5shield: E[0m
+[0;32mI (195957) 9x5shield: L[0m
+[0;32mI (195967) 9x5shield: L[0m
+[0;32mI (195967) 9x5shield: O[0m
+[0;32mI (195967) 9x5shield:  [0m
+[0;32mI (195967) 9x5shield: 9[0m
+[0;32mI (195977) 9x5shield: X[0m
+[0;32mI (195977) 9x5shield: 5[0m
+[0;32mI (195977) 9x5shield:  [0m
+[0;32mI (195987) 9x5shield: S[0m
+[0;32mI (195987) 9x5shield: H[0m
+[0;32mI (195987) 9x5shield: I[0m
+[0;32mI (195997) 9x5shield: E[0m
+[0;32mI (195997) 9x5shield: L[0m
+[0;32mI (195997) 9x5shield: D[0m
+[0;32mI (196007) 9x5shield: ![0m

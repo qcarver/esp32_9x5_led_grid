@@ -1,0 +1,44 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyUSB1 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d87cf: task_wdt_timeout_handling at /home/qcarver/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400d8b94: task_wdt_isr at /home/qcarver/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40082fd9: _xt_lowint1 at /home/qcarver/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400843ed: esp_crosscore_int_send_yield at /home/qcarver/esp/v5.2.1/esp-idf/components/esp_system/crosscore_int.c:172
+0x40087b22: vTaskDelay at /home/qcarver/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1561 (discriminator 1)
+0x400d558c: persistance_of_vision_callback at /home/qcarver/Dev/esp/9x5LedShield/main/9x5shield.c:50
+0x400d3815: timer_process_alarm at /home/qcarver/esp/v5.2.1/esp-idf/components/esp_timer/src/esp_timer.c:453
+0x400d385d: timer_task at /home/qcarver/esp/v5.2.1/esp-idf/components/esp_timer/src/esp_timer.c:479 (discriminator 1)
+0x400860c9: vPortTaskWrapper at /home/qcarver/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d87cf: task_wdt_timeout_handling at /home/qcarver/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400d8b94: task_wdt_isr at /home/qcarver/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40082fd9: _xt_lowint1 at /home/qcarver/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400843ed: esp_crosscore_int_send_yield at /home/qcarver/esp/v5.2.1/esp-idf/components/esp_system/crosscore_int.c:172
+0x40087b22: vTaskDelay at /home/qcarver/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1561 (discriminator 1)
+0x400d558c: persistance_of_vision_callback at /home/qcarver/Dev/esp/9x5LedShield/main/9x5shield.c:50
+0x400d3815: timer_process_alarm at /home/qcarver/esp/v5.2.1/esp-idf/components/esp_timer/src/esp_timer.c:453
+0x400d385d: timer_task at /home/qcarver/esp/v5.2.1/esp-idf/components/esp_timer/src/esp_timer.c:479 (discriminator 1)
+0x400860c9: vPortTaskWrapper at /home/qcarver/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d87cf: task_wdt_timeout_handling at /home/qcarver/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400d8b94: task_wdt_isr at /home/qcarver/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40082fd9: _xt_lowint1 at /home/qcarver/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400843ed: esp_crosscore_int_send_yield at /home/qcarver/esp/v5.2.1/esp-idf/components/esp_system/crosscore_int.c:172
+0x40087b22: vTaskDelay at /home/qcarver/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1561 (discriminator 1)
+0x400d558c: persistance_of_vision_callback at /home/qcarver/Dev/esp/9x5LedShield/main/9x5shield.c:50
+0x400d3815: timer_process_alarm at /home/qcarver/esp/v5.2.1/esp-idf/components/esp_timer/src/esp_timer.c:453
+0x400d385d: timer_task at /home/qcarver/esp/v5.2.1/esp-idf/components/esp_timer/src/esp_timer.c:479 (discriminator 1)
+0x400860c9: vPortTaskWrapper at /home/qcarver/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d87cf: task_wdt_timeout_handling at /home/qcarver/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400d8b94: task_wdt_isr at /home/qcarver/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40082fd9: _xt_lowint1 at /home/qcarver/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d707c: gpio_set_level at /home/qcarver/esp/v5.2.1/esp-idf/components/driver/gpio/gpio.c:239
+0x400d5580: persistance_of_vision_callback at /home/qcarver/Dev/esp/9x5LedShield/main/9x5shield.c:48
+0x400d3815: timer_process_alarm at /home/qcarver/esp/v5.2.1/esp-idf/components/esp_timer/src/esp_timer.c:453
+0x400d385d: timer_task at /home/qcarver/esp/v5.2.1/esp-idf/components/esp_timer/src/esp_timer.c:479 (discriminator 1)
+0x400860c9: vPortTaskWrapper at /home/qcarver/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0m

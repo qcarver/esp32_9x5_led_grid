@@ -1,0 +1,1060 @@
+000351fc vaddr=4�ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Jun 18 2024 20:55:09[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a2bch ( 41660) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=0001a2e4 vaddr=3ffb0000 size=02294h (  8852) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=0001c580 vaddr=40080000 size=03a98h ( 15000) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=151d4h ( 86484) map[0m
+[0;32mI (162) esp_image: segment 4: paddr=000351fc vaddr=40083a98 size=08d2ch ( 36140) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (194) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) cpu_start: Application information:[0m
+[0;32mI (206) cpu_start: Project name:     9x5LedShield[0m
+[0;32mI (211) cpu_start: App version:      1[0m
+[0;32mI (216) cpu_start: Compile time:     Jun 18 2024 20:55:04[0m
+[0;32mI (222) cpu_start: ELF file SHA256:  57e5da0dd...[0m
+[0;32mI (227) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (233) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (237) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (242) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (247) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (260) heap_init: At 3FFB2C60 len 0002D3A0 (180 KiB): DRAM[0m
+[0;32mI (266) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (273) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (279) heap_init: At 4008C7C4 len 0001383C (78 KiB): IRAM[0m
+[0;32mI (287) spi_flash: detected chip: gd[0m
+[0;32mI (290) spi_flash: flash io: dio[0m
+[0;33mW (293) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (307) main_task: Started on CPU0[0m
+[0;32mI (317) main_task: Calling app_main()[0m
+[0;32mI (317) main: Starting app_main()[0m
+[0;32mI (317) 9x5shield: hw initting LED GPIOS[0m
+[0;32mI (317) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (327) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (337) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (347) gpio: GPIO[12]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (357) gpio: GPIO[13]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (367) gpio: GPIO[22]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (377) gpio: GPIO[23]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (387) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (397) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (397) gpio: GPIO[15]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (407) gpio: GPIO[16]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (417) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (427) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (437) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (447) 9x5shield: Creating Timers[0m
+[0;32mI (457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (17457) main: Repeating from top of main while loop[0m
+[0;32mI (17457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (34457) main: Repeating from top of main while loop[0m
+[0;32mI (34457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (51457) main: Repeating from top of main while loop[0m
+[0;32mI (51457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (68457) main: Repeating from top of main while loop[0m
+[0;32mI (68457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (85457) main: Repeating from top of main while loop[0m
+[0;32mI (85457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (102457) main: Repeating from top of main while loop[0m
+[0;32mI (102457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (119457) main: Repeating from top of main while loop[0m
+[0;32mI (119457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (136457) main: Repeating from top of main while loop[0m
+[0;32mI (136457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (153457) main: Repeating from top of main while loop[0m
+[0;32mI (153457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (170457) main: Repeating from top of main while loop[0m
+[0;32mI (170457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (187457) main: Repeating from top of main while loop[0m
+[0;32mI (187457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (204457) main: Repeating from top of main while loop[0m
+[0;32mI (204457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (221457) main: Repeating from top of main while loop[0m
+[0;32mI (221457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (238457) main: Repeating from top of main while loop[0m
+[0;32mI (238457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (255457) main: Repeating from top of main while loop[0m
+[0;32mI (255457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (272457) main: Repeating from top of main while loop[0m
+[0;32mI (272457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (289457) main: Repeating from top of main while loop[0m
+[0;32mI (289457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (306457) main: Repeating from top of main while loop[0m
+[0;32mI (306457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (323457) main: Repeating from top of main while loop[0m
+[0;32mI (323457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (340457) main: Repeating from top of main while loop[0m
+[0;32mI (340457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (357457) main: Repeating from top of main while loop[0m
+[0;32mI (357457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (374457) main: Repeating from top of main while loop[0m
+[0;32mI (374457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (391457) main: Repeating from top of main while loop[0m
+[0;32mI (391457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (408457) main: Repeating from top of main while loop[0m
+[0;32mI (408457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (425457) main: Repeating from top of main while loop[0m
+[0;32mI (425457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (442457) main: Repeating from top of main while loop[0m
+[0;32mI (442457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (459457) main: Repeating from top of main while loop[0m
+[0;32mI (459457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (476457) main: Repeating from top of main while loop[0m
+[0;32mI (476457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (493457) main: Repeating from top of main while loop[0m
+[0;32mI (493457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (510457) main: Repeating from top of main while loop[0m
+[0;32mI (510457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (527457) main: Repeating from top of main while loop[0m
+[0;32mI (527457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (544457) main: Repeating from top of main while loop[0m
+[0;32mI (544457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (561457) main: Repeating from top of main while loop[0m
+[0;32mI (561457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (578457) main: Repeating from top of main while loop[0m
+[0;32mI (578457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (595457) main: Repeating from top of main while loop[0m
+[0;32mI (595457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (612457) main: Repeating from top of main while loop[0m
+[0;32mI (612457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (629457) main: Repeating from top of main while loop[0m
+[0;32mI (629457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (646457) main: Repeating from top of main while loop[0m
+[0;32mI (646457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (663457) main: Repeating from top of main while loop[0m
+[0;32mI (663457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (680457) main: Repeating from top of main while loop[0m
+[0;32mI (680457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (697457) main: Repeating from top of main while loop[0m
+[0;32mI (697457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (714457) main: Repeating from top of main while loop[0m
+[0;32mI (714457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (731457) main: Repeating from top of main while loop[0m
+[0;32mI (731457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (748457) main: Repeating from top of main while loop[0m
+[0;32mI (748457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (765457) main: Repeating from top of main while loop[0m
+[0;32mI (765457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (782457) main: Repeating from top of main while loop[0m
+[0;32mI (782457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (799457) main: Repeating from top of main while loop[0m
+[0;32mI (799457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (816457) main: Repeating from top of main while loop[0m
+[0;32mI (816457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (833457) main: Repeating from top of main while loop[0m
+[0;32mI (833457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (850457) main: Repeating from top of main while loop[0m
+[0;32mI (850457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (867457) main: Repeating from top of main while loop[0m
+[0;32mI (867457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (884457) main: Repeating from top of main while loop[0m
+[0;32mI (884457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (901457) main: Repeating from top of main while loop[0m
+[0;32mI (901457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (918457) main: Repeating from top of main while loop[0m
+[0;32mI (918457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (935457) main: Repeating from top of main while loop[0m
+[0;32mI (935457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (952457) main: Repeating from top of main while loop[0m
+[0;32mI (952457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (969457) main: Repeating from top of main while loop[0m
+[0;32mI (969457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (986457) main: Repeating from top of main while loop[0m
+[0;32mI (986457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1003457) main: Repeating from top of main while loop[0m
+[0;32mI (1003457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1020457) main: Repeating from top of main while loop[0m
+[0;32mI (1020457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1037457) main: Repeating from top of main while loop[0m
+[0;32mI (1037457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1054457) main: Repeating from top of main while loop[0m
+[0;32mI (1054457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1071457) main: Repeating from top of main while loop[0m
+[0;32mI (1071457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1088457) main: Repeating from top of main while loop[0m
+[0;32mI (1088457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1105457) main: Repeating from top of main while loop[0m
+[0;32mI (1105457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1122457) main: Repeating from top of main while loop[0m
+[0;32mI (1122457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1139457) main: Repeating from top of main while loop[0m
+[0;32mI (1139457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1156457) main: Repeating from top of main while loop[0m
+[0;32mI (1156457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1173457) main: Repeating from top of main while loop[0m
+[0;32mI (1173457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1190457) main: Repeating from top of main while loop[0m
+[0;32mI (1190457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1207457) main: Repeating from top of main while loop[0m
+[0;32mI (1207457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1224457) main: Repeating from top of main while loop[0m
+[0;32mI (1224457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1241457) main: Repeating from top of main while loop[0m
+[0;32mI (1241457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1258457) main: Repeating from top of main while loop[0m
+[0;32mI (1258457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1275457) main: Repeating from top of main while loop[0m
+[0;32mI (1275457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1292457) main: Repeating from top of main while loop[0m
+[0;32mI (1292457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1309457) main: Repeating from top of main while loop[0m
+[0;32mI (1309457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1326457) main: Repeating from top of main while loop[0m
+[0;32mI (1326457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1343457) main: Repeating from top of main while loop[0m
+[0;32mI (1343457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1360457) main: Repeating from top of main while loop[0m
+[0;32mI (1360457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1377457) main: Repeating from top of main while loop[0m
+[0;32mI (1377457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1394457) main: Repeating from top of main while loop[0m
+[0;32mI (1394457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1411457) main: Repeating from top of main while loop[0m
+[0;32mI (1411457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1428457) main: Repeating from top of main while loop[0m
+[0;32mI (1428457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1445457) main: Repeating from top of main while loop[0m
+[0;32mI (1445457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1462457) main: Repeating from top of main while loop[0m
+[0;32mI (1462457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1479457) main: Repeating from top of main while loop[0m
+[0;32mI (1479457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1496457) main: Repeating from top of main while loop[0m
+[0;32mI (1496457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1513457) main: Repeating from top of main while loop[0m
+[0;32mI (1513457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1530457) main: Repeating from top of main while loop[0m
+[0;32mI (1530457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1547457) main: Repeating from top of main while loop[0m
+[0;32mI (1547457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1564457) main: Repeating from top of main while loop[0m
+[0;32mI (1564457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1581457) main: Repeating from top of main while loop[0m
+[0;32mI (1581457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1598457) main: Repeating from top of main while loop[0m
+[0;32mI (1598457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1615457) main: Repeating from top of main while loop[0m
+[0;32mI (1615457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1632457) main: Repeating from top of main while loop[0m
+[0;32mI (1632457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1649457) main: Repeating from top of main while loop[0m
+[0;32mI (1649457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1666457) main: Repeating from top of main while loop[0m
+[0;32mI (1666457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1683457) main: Repeating from top of main while loop[0m
+[0;32mI (1683457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1700457) main: Repeating from top of main while loop[0m
+[0;32mI (1700457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1717457) main: Repeating from top of main while loop[0m
+[0;32mI (1717457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1734457) main: Repeating from top of main while loop[0m
+[0;32mI (1734457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1751457) main: Repeating from top of main while loop[0m
+[0;32mI (1751457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1768457) main: Repeating from top of main while loop[0m
+[0;32mI (1768457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1785457) main: Repeating from top of main while loop[0m
+[0;32mI (1785457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1802457) main: Repeating from top of main while loop[0m
+[0;32mI (1802457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1819457) main: Repeating from top of main while loop[0m
+[0;32mI (1819457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1836457) main: Repeating from top of main while loop[0m
+[0;32mI (1836457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1853457) main: Repeating from top of main while loop[0m
+[0;32mI (1853457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1870457) main: Repeating from top of main while loop[0m
+[0;32mI (1870457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1887457) main: Repeating from top of main while loop[0m
+[0;32mI (1887457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1904457) main: Repeating from top of main while loop[0m
+[0;32mI (1904457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1921457) main: Repeating from top of main while loop[0m
+[0;32mI (1921457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1938457) main: Repeating from top of main while loop[0m
+[0;32mI (1938457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1955457) main: Repeating from top of main while loop[0m
+[0;32mI (1955457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1972457) main: Repeating from top of main while loop[0m
+[0;32mI (1972457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (1989457) main: Repeating from top of main while loop[0m
+[0;32mI (1989457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2006457) main: Repeating from top of main while loop[0m
+[0;32mI (2006457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2023457) main: Repeating from top of main while loop[0m
+[0;32mI (2023457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2040457) main: Repeating from top of main while loop[0m
+[0;32mI (2040457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2057457) main: Repeating from top of main while loop[0m
+[0;32mI (2057457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2074457) main: Repeating from top of main while loop[0m
+[0;32mI (2074457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2091457) main: Repeating from top of main while loop[0m
+[0;32mI (2091457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2108457) main: Repeating from top of main while loop[0m
+[0;32mI (2108457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2125457) main: Repeating from top of main while loop[0m
+[0;32mI (2125457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2142457) main: Repeating from top of main while loop[0m
+[0;32mI (2142457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2159457) main: Repeating from top of main while loop[0m
+[0;32mI (2159457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2176457) main: Repeating from top of main while loop[0m
+[0;32mI (2176457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2193457) main: Repeating from top of main while loop[0m
+[0;32mI (2193457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2210457) main: Repeating from top of main while loop[0m
+[0;32mI (2210457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2227457) main: Repeating from top of main while loop[0m
+[0;32mI (2227457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2244457) main: Repeating from top of main while loop[0m
+[0;32mI (2244457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2261457) main: Repeating from top of main while loop[0m
+[0;32mI (2261457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2278457) main: Repeating from top of main while loop[0m
+[0;32mI (2278457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2295457) main: Repeating from top of main while loop[0m
+[0;32mI (2295457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2312457) main: Repeating from top of main while loop[0m
+[0;32mI (2312457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2329457) main: Repeating from top of main while loop[0m
+[0;32mI (2329457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2346457) main: Repeating from top of main while loop[0m
+[0;32mI (2346457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2363457) main: Repeating from top of main while loop[0m
+[0;32mI (2363457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2380457) main: Repeating from top of main while loop[0m
+[0;32mI (2380457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2397457) main: Repeating from top of main while loop[0m
+[0;32mI (2397457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2414457) main: Repeating from top of main while loop[0m
+[0;32mI (2414457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2431457) main: Repeating from top of main while loop[0m
+[0;32mI (2431457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2448457) main: Repeating from top of main while loop[0m
+[0;32mI (2448457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2465457) main: Repeating from top of main while loop[0m
+[0;32mI (2465457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2482457) main: Repeating from top of main while loop[0m
+[0;32mI (2482457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2499457) main: Repeating from top of main while loop[0m
+[0;32mI (2499457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2516457) main: Repeating from top of main while loop[0m
+[0;32mI (2516457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2533457) main: Repeating from top of main while loop[0m
+[0;32mI (2533457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2550457) main: Repeating from top of main while loop[0m
+[0;32mI (2550457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2567457) main: Repeating from top of main while loop[0m
+[0;32mI (2567457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2584457) main: Repeating from top of main while loop[0m
+[0;32mI (2584457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2601457) main: Repeating from top of main while loop[0m
+[0;32mI (2601457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2618457) main: Repeating from top of main while loop[0m
+[0;32mI (2618457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2635457) main: Repeating from top of main while loop[0m
+[0;32mI (2635457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2652457) main: Repeating from top of main while loop[0m
+[0;32mI (2652457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2669457) main: Repeating from top of main while loop[0m
+[0;32mI (2669457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2686457) main: Repeating from top of main while loop[0m
+[0;32mI (2686457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2703457) main: Repeating from top of main while loop[0m
+[0;32mI (2703457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2720457) main: Repeating from top of main while loop[0m
+[0;32mI (2720457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2737457) main: Repeating from top of main while loop[0m
+[0;32mI (2737457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2754457) main: Repeating from top of main while loop[0m
+[0;32mI (2754457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2771457) main: Repeating from top of main while loop[0m
+[0;32mI (2771457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2788457) main: Repeating from top of main while loop[0m
+[0;32mI (2788457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2805457) main: Repeating from top of main while loop[0m
+[0;32mI (2805457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2822457) main: Repeating from top of main while loop[0m
+[0;32mI (2822457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2839457) main: Repeating from top of main while loop[0m
+[0;32mI (2839457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2856457) main: Repeating from top of main while loop[0m
+[0;32mI (2856457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2873457) main: Repeating from top of main while loop[0m
+[0;32mI (2873457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2890457) main: Repeating from top of main while loop[0m
+[0;32mI (2890457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2907457) main: Repeating from top of main while loop[0m
+[0;32mI (2907457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2924457) main: Repeating from top of main while loop[0m
+[0;32mI (2924457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2941457) main: Repeating from top of main while loop[0m
+[0;32mI (2941457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2958457) main: Repeating from top of main while loop[0m
+[0;32mI (2958457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2975457) main: Repeating from top of main while loop[0m
+[0;32mI (2975457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (2992457) main: Repeating from top of main while loop[0m
+[0;32mI (2992457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3009457) main: Repeating from top of main while loop[0m
+[0;32mI (3009457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3026457) main: Repeating from top of main while loop[0m
+[0;32mI (3026457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3043457) main: Repeating from top of main while loop[0m
+[0;32mI (3043457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3060457) main: Repeating from top of main while loop[0m
+[0;32mI (3060457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3077457) main: Repeating from top of main while loop[0m
+[0;32mI (3077457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3094457) main: Repeating from top of main while loop[0m
+[0;32mI (3094457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3111457) main: Repeating from top of main while loop[0m
+[0;32mI (3111457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3128457) main: Repeating from top of main while loop[0m
+[0;32mI (3128457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3145457) main: Repeating from top of main while loop[0m
+[0;32mI (3145457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3162457) main: Repeating from top of main while loop[0m
+[0;32mI (3162457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3179457) main: Repeating from top of main while loop[0m
+[0;32mI (3179457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3196457) main: Repeating from top of main while loop[0m
+[0;32mI (3196457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3213457) main: Repeating from top of main while loop[0m
+[0;32mI (3213457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3230457) main: Repeating from top of main while loop[0m
+[0;32mI (3230457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3247457) main: Repeating from top of main while loop[0m
+[0;32mI (3247457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3264457) main: Repeating from top of main while loop[0m
+[0;32mI (3264457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3281457) main: Repeating from top of main while loop[0m
+[0;32mI (3281457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3298457) main: Repeating from top of main while loop[0m
+[0;32mI (3298457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3315457) main: Repeating from top of main while loop[0m
+[0;32mI (3315457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3332457) main: Repeating from top of main while loop[0m
+[0;32mI (3332457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3349457) main: Repeating from top of main while loop[0m
+[0;32mI (3349457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3366457) main: Repeating from top of main while loop[0m
+[0;32mI (3366457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3383457) main: Repeating from top of main while loop[0m
+[0;32mI (3383457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3400457) main: Repeating from top of main while loop[0m
+[0;32mI (3400457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3417457) main: Repeating from top of main while loop[0m
+[0;32mI (3417457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3434457) main: Repeating from top of main while loop[0m
+[0;32mI (3434457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3451457) main: Repeating from top of main while loop[0m
+[0;32mI (3451457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3468457) main: Repeating from top of main while loop[0m
+[0;32mI (3468457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3485457) main: Repeating from top of main while loop[0m
+[0;32mI (3485457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3502457) main: Repeating from top of main while loop[0m
+[0;32mI (3502457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3519457) main: Repeating from top of main while loop[0m
+[0;32mI (3519457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3536457) main: Repeating from top of main while loop[0m
+[0;32mI (3536457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3553457) main: Repeating from top of main while loop[0m
+[0;32mI (3553457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3570457) main: Repeating from top of main while loop[0m
+[0;32mI (3570457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3587457) main: Repeating from top of main while loop[0m
+[0;32mI (3587457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3604457) main: Repeating from top of main while loop[0m
+[0;32mI (3604457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3621457) main: Repeating from top of main while loop[0m
+[0;32mI (3621457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3638457) main: Repeating from top of main while loop[0m
+[0;32mI (3638457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3655457) main: Repeating from top of main while loop[0m
+[0;32mI (3655457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3672457) main: Repeating from top of main while loop[0m
+[0;32mI (3672457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3689457) main: Repeating from top of main while loop[0m
+[0;32mI (3689457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3706457) main: Repeating from top of main while loop[0m
+[0;32mI (3706457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3723457) main: Repeating from top of main while loop[0m
+[0;32mI (3723457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3740457) main: Repeating from top of main while loop[0m
+[0;32mI (3740457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3757457) main: Repeating from top of main while loop[0m
+[0;32mI (3757457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3774457) main: Repeating from top of main while loop[0m
+[0;32mI (3774457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3791457) main: Repeating from top of main while loop[0m
+[0;32mI (3791457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3808457) main: Repeating from top of main while loop[0m
+[0;32mI (3808457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3825457) main: Repeating from top of main while loop[0m
+[0;32mI (3825457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3842457) main: Repeating from top of main while loop[0m
+[0;32mI (3842457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3859457) main: Repeating from top of main while loop[0m
+[0;32mI (3859457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3876457) main: Repeating from top of main while loop[0m
+[0;32mI (3876457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3893457) main: Repeating from top of main while loop[0m
+[0;32mI (3893457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3910457) main: Repeating from top of main while loop[0m
+[0;32mI (3910457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3927457) main: Repeating from top of main while loop[0m
+[0;32mI (3927457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3944457) main: Repeating from top of main while loop[0m
+[0;32mI (3944457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3961457) main: Repeating from top of main while loop[0m
+[0;32mI (3961457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3978457) main: Repeating from top of main while loop[0m
+[0;32mI (3978457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (3995457) main: Repeating from top of main while loop[0m
+[0;32mI (3995457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4012457) main: Repeating from top of main while loop[0m
+[0;32mI (4012457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4029457) main: Repeating from top of main while loop[0m
+[0;32mI (4029457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4046457) main: Repeating from top of main while loop[0m
+[0;32mI (4046457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4063457) main: Repeating from top of main while loop[0m
+[0;32mI (4063457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4080457) main: Repeating from top of main while loop[0m
+[0;32mI (4080457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4097457) main: Repeating from top of main while loop[0m
+[0;32mI (4097457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4114457) main: Repeating from top of main while loop[0m
+[0;32mI (4114457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4131457) main: Repeating from top of main while loop[0m
+[0;32mI (4131457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4148457) main: Repeating from top of main while loop[0m
+[0;32mI (4148457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4165457) main: Repeating from top of main while loop[0m
+[0;32mI (4165457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4182457) main: Repeating from top of main while loop[0m
+[0;32mI (4182457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4199457) main: Repeating from top of main while loop[0m
+[0;32mI (4199457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4216457) main: Repeating from top of main while loop[0m
+[0;32mI (4216457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4233457) main: Repeating from top of main while loop[0m
+[0;32mI (4233457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4250457) main: Repeating from top of main while loop[0m
+[0;32mI (4250457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4267457) main: Repeating from top of main while loop[0m
+[0;32mI (4267457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4284457) main: Repeating from top of main while loop[0m
+[0;32mI (4284457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4301457) main: Repeating from top of main while loop[0m
+[0;32mI (4301457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4318457) main: Repeating from top of main while loop[0m
+[0;32mI (4318457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4335457) main: Repeating from top of main while loop[0m
+[0;32mI (4335457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4352457) main: Repeating from top of main while loop[0m
+[0;32mI (4352457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4369457) main: Repeating from top of main while loop[0m
+[0;32mI (4369457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4386457) main: Repeating from top of main while loop[0m
+[0;32mI (4386457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4403457) main: Repeating from top of main while loop[0m
+[0;32mI (4403457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4420457) main: Repeating from top of main while loop[0m
+[0;32mI (4420457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4437457) main: Repeating from top of main while loop[0m
+[0;32mI (4437457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4454457) main: Repeating from top of main while loop[0m
+[0;32mI (4454457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4471457) main: Repeating from top of main while loop[0m
+[0;32mI (4471457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4488457) main: Repeating from top of main while loop[0m
+[0;32mI (4488457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4505457) main: Repeating from top of main while loop[0m
+[0;32mI (4505457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4522457) main: Repeating from top of main while loop[0m
+[0;32mI (4522457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4539457) main: Repeating from top of main while loop[0m
+[0;32mI (4539457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4556457) main: Repeating from top of main while loop[0m
+[0;32mI (4556457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4573457) main: Repeating from top of main while loop[0m
+[0;32mI (4573457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4590457) main: Repeating from top of main while loop[0m
+[0;32mI (4590457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4607457) main: Repeating from top of main while loop[0m
+[0;32mI (4607457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4624457) main: Repeating from top of main while loop[0m
+[0;32mI (4624457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4641457) main: Repeating from top of main while loop[0m
+[0;32mI (4641457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4658457) main: Repeating from top of main while loop[0m
+[0;32mI (4658457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4675457) main: Repeating from top of main while loop[0m
+[0;32mI (4675457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4692457) main: Repeating from top of main while loop[0m
+[0;32mI (4692457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4709457) main: Repeating from top of main while loop[0m
+[0;32mI (4709457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4726457) main: Repeating from top of main while loop[0m
+[0;32mI (4726457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4743457) main: Repeating from top of main while loop[0m
+[0;32mI (4743457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4760457) main: Repeating from top of main while loop[0m
+[0;32mI (4760457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4777457) main: Repeating from top of main while loop[0m
+[0;32mI (4777457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4794457) main: Repeating from top of main while loop[0m
+[0;32mI (4794457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4811457) main: Repeating from top of main while loop[0m
+[0;32mI (4811457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4828457) main: Repeating from top of main while loop[0m
+[0;32mI (4828457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4845457) main: Repeating from top of main while loop[0m
+[0;32mI (4845457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4862457) main: Repeating from top of main while loop[0m
+[0;32mI (4862457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4879457) main: Repeating from top of main while loop[0m
+[0;32mI (4879457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4896457) main: Repeating from top of main while loop[0m
+[0;32mI (4896457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4913457) main: Repeating from top of main while loop[0m
+[0;32mI (4913457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4930457) main: Repeating from top of main while loop[0m
+[0;32mI (4930457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4947457) main: Repeating from top of main while loop[0m
+[0;32mI (4947457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4964457) main: Repeating from top of main while loop[0m
+[0;32mI (4964457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4981457) main: Repeating from top of main while loop[0m
+[0;32mI (4981457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (4998457) main: Repeating from top of main while loop[0m
+[0;32mI (4998457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5015457) main: Repeating from top of main while loop[0m
+[0;32mI (5015457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5032457) main: Repeating from top of main while loop[0m
+[0;32mI (5032457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5049457) main: Repeating from top of main while loop[0m
+[0;32mI (5049457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5066457) main: Repeating from top of main while loop[0m
+[0;32mI (5066457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5083457) main: Repeating from top of main while loop[0m
+[0;32mI (5083457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5100457) main: Repeating from top of main while loop[0m
+[0;32mI (5100457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5117457) main: Repeating from top of main while loop[0m
+[0;32mI (5117457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5134457) main: Repeating from top of main while loop[0m
+[0;32mI (5134457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5151457) main: Repeating from top of main while loop[0m
+[0;32mI (5151457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5168457) main: Repeating from top of main while loop[0m
+[0;32mI (5168457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5185457) main: Repeating from top of main while loop[0m
+[0;32mI (5185457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5202457) main: Repeating from top of main while loop[0m
+[0;32mI (5202457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5219457) main: Repeating from top of main while loop[0m
+[0;32mI (5219457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5236457) main: Repeating from top of main while loop[0m
+[0;32mI (5236457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5253457) main: Repeating from top of main while loop[0m
+[0;32mI (5253457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5270457) main: Repeating from top of main while loop[0m
+[0;32mI (5270457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5287457) main: Repeating from top of main while loop[0m
+[0;32mI (5287457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5304457) main: Repeating from top of main while loop[0m
+[0;32mI (5304457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5321457) main: Repeating from top of main while loop[0m
+[0;32mI (5321457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5338457) main: Repeating from top of main while loop[0m
+[0;32mI (5338457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5355457) main: Repeating from top of main while loop[0m
+[0;32mI (5355457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5372457) main: Repeating from top of main while loop[0m
+[0;32mI (5372457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5389457) main: Repeating from top of main while loop[0m
+[0;32mI (5389457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5406457) main: Repeating from top of main while loop[0m
+[0;32mI (5406457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5423457) main: Repeating from top of main while loop[0m
+[0;32mI (5423457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5440457) main: Repeating from top of main while loop[0m
+[0;32mI (5440457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5457457) main: Repeating from top of main while loop[0m
+[0;32mI (5457457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5474457) main: Repeating from top of main while loop[0m
+[0;32mI (5474457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5491457) main: Repeating from top of main while loop[0m
+[0;32mI (5491457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5508457) main: Repeating from top of main while loop[0m
+[0;32mI (5508457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5525457) main: Repeating from top of main while loop[0m
+[0;32mI (5525457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5542457) main: Repeating from top of main while loop[0m
+[0;32mI (5542457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5559457) main: Repeating from top of main while loop[0m
+[0;32mI (5559457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5576457) main: Repeating from top of main while loop[0m
+[0;32mI (5576457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5593457) main: Repeating from top of main while loop[0m
+[0;32mI (5593457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5610457) main: Repeating from top of main while loop[0m
+[0;32mI (5610457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5627457) main: Repeating from top of main while loop[0m
+[0;32mI (5627457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5644457) main: Repeating from top of main while loop[0m
+[0;32mI (5644457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5661457) main: Repeating from top of main while loop[0m
+[0;32mI (5661457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5678457) main: Repeating from top of main while loop[0m
+[0;32mI (5678457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5695457) main: Repeating from top of main while loop[0m
+[0;32mI (5695457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5712457) main: Repeating from top of main while loop[0m
+[0;32mI (5712457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5729457) main: Repeating from top of main while loop[0m
+[0;32mI (5729457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5746457) main: Repeating from top of main while loop[0m
+[0;32mI (5746457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5763457) main: Repeating from top of main while loop[0m
+[0;32mI (5763457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5780457) main: Repeating from top of main while loop[0m
+[0;32mI (5780457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5797457) main: Repeating from top of main while loop[0m
+[0;32mI (5797457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5814457) main: Repeating from top of main while loop[0m
+[0;32mI (5814457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5831457) main: Repeating from top of main while loop[0m
+[0;32mI (5831457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5848457) main: Repeating from top of main while loop[0m
+[0;32mI (5848457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5865457) main: Repeating from top of main while loop[0m
+[0;32mI (5865457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5882457) main: Repeating from top of main while loop[0m
+[0;32mI (5882457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5899457) main: Repeating from top of main while loop[0m
+[0;32mI (5899457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5916457) main: Repeating from top of main while loop[0m
+[0;32mI (5916457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5933457) main: Repeating from top of main while loop[0m
+[0;32mI (5933457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5950457) main: Repeating from top of main while loop[0m
+[0;32mI (5950457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5967457) main: Repeating from top of main while loop[0m
+[0;32mI (5967457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (5984457) main: Repeating from top of main while loop[0m
+[0;32mI (5984457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6001457) main: Repeating from top of main while loop[0m
+[0;32mI (6001457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6018457) main: Repeating from top of main while loop[0m
+[0;32mI (6018457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6035457) main: Repeating from top of main while loop[0m
+[0;32mI (6035457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6052457) main: Repeating from top of main while loop[0m
+[0;32mI (6052457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6069457) main: Repeating from top of main while loop[0m
+[0;32mI (6069457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6086457) main: Repeating from top of main while loop[0m
+[0;32mI (6086457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6103457) main: Repeating from top of main while loop[0m
+[0;32mI (6103457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6120457) main: Repeating from top of main while loop[0m
+[0;32mI (6120457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6137457) main: Repeating from top of main while loop[0m
+[0;32mI (6137457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6154457) main: Repeating from top of main while loop[0m
+[0;32mI (6154457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6171457) main: Repeating from top of main while loop[0m
+[0;32mI (6171457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6188457) main: Repeating from top of main while loop[0m
+[0;32mI (6188457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6205457) main: Repeating from top of main while loop[0m
+[0;32mI (6205457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6222457) main: Repeating from top of main while loop[0m
+[0;32mI (6222457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6239457) main: Repeating from top of main while loop[0m
+[0;32mI (6239457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6256457) main: Repeating from top of main while loop[0m
+[0;32mI (6256457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6273457) main: Repeating from top of main while loop[0m
+[0;32mI (6273457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6290457) main: Repeating from top of main while loop[0m
+[0;32mI (6290457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6307457) main: Repeating from top of main while loop[0m
+[0;32mI (6307457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6324457) main: Repeating from top of main while loop[0m
+[0;32mI (6324457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6341457) main: Repeating from top of main while loop[0m
+[0;32mI (6341457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6358457) main: Repeating from top of main while loop[0m
+[0;32mI (6358457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6375457) main: Repeating from top of main while loop[0m
+[0;32mI (6375457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6392457) main: Repeating from top of main while loop[0m
+[0;32mI (6392457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6409457) main: Repeating from top of main while loop[0m
+[0;32mI (6409457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6426457) main: Repeating from top of main while loop[0m
+[0;32mI (6426457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6443457) main: Repeating from top of main while loop[0m
+[0;32mI (6443457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6460457) main: Repeating from top of main while loop[0m
+[0;32mI (6460457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6477457) main: Repeating from top of main while loop[0m
+[0;32mI (6477457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6494457) main: Repeating from top of main while loop[0m
+[0;32mI (6494457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6511457) main: Repeating from top of main while loop[0m
+[0;32mI (6511457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6528457) main: Repeating from top of main while loop[0m
+[0;32mI (6528457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6545457) main: Repeating from top of main while loop[0m
+[0;32mI (6545457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6562457) main: Repeating from top of main while loop[0m
+[0;32mI (6562457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6579457) main: Repeating from top of main while loop[0m
+[0;32mI (6579457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6596457) main: Repeating from top of main while loop[0m
+[0;32mI (6596457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6613457) main: Repeating from top of main while loop[0m
+[0;32mI (6613457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6630457) main: Repeating from top of main while loop[0m
+[0;32mI (6630457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6647457) main: Repeating from top of main while loop[0m
+[0;32mI (6647457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6664457) main: Repeating from top of main while loop[0m
+[0;32mI (6664457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6681457) main: Repeating from top of main while loop[0m
+[0;32mI (6681457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6698457) main: Repeating from top of main while loop[0m
+[0;32mI (6698457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6715457) main: Repeating from top of main while loop[0m
+[0;32mI (6715457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6732457) main: Repeating from top of main while loop[0m
+[0;32mI (6732457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6749457) main: Repeating from top of main while loop[0m
+[0;32mI (6749457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6766457) main: Repeating from top of main while loop[0m
+[0;32mI (6766457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6783457) main: Repeating from top of main while loop[0m
+[0;32mI (6783457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6800457) main: Repeating from top of main while loop[0m
+[0;32mI (6800457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6817457) main: Repeating from top of main while loop[0m
+[0;32mI (6817457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6834457) main: Repeating from top of main while loop[0m
+[0;32mI (6834457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6851457) main: Repeating from top of main while loop[0m
+[0;32mI (6851457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6868457) main: Repeating from top of main while loop[0m
+[0;32mI (6868457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6885457) main: Repeating from top of main while loop[0m
+[0;32mI (6885457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6902457) main: Repeating from top of main while loop[0m
+[0;32mI (6902457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6919457) main: Repeating from top of main while loop[0m
+[0;32mI (6919457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6936457) main: Repeating from top of main while loop[0m
+[0;32mI (6936457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6953457) main: Repeating from top of main while loop[0m
+[0;32mI (6953457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6970457) main: Repeating from top of main while loop[0m
+[0;32mI (6970457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (6987457) main: Repeating from top of main while loop[0m
+[0;32mI (6987457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7004457) main: Repeating from top of main while loop[0m
+[0;32mI (7004457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7021457) main: Repeating from top of main while loop[0m
+[0;32mI (7021457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7038457) main: Repeating from top of main while loop[0m
+[0;32mI (7038457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7055457) main: Repeating from top of main while loop[0m
+[0;32mI (7055457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7072457) main: Repeating from top of main while loop[0m
+[0;32mI (7072457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7089457) main: Repeating from top of main while loop[0m
+[0;32mI (7089457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7106457) main: Repeating from top of main while loop[0m
+[0;32mI (7106457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7123457) main: Repeating from top of main while loop[0m
+[0;32mI (7123457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7140457) main: Repeating from top of main while loop[0m
+[0;32mI (7140457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7157457) main: Repeating from top of main while loop[0m
+[0;32mI (7157457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7174457) main: Repeating from top of main while loop[0m
+[0;32mI (7174457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7191457) main: Repeating from top of main while loop[0m
+[0;32mI (7191457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7208457) main: Repeating from top of main while loop[0m
+[0;32mI (7208457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7225457) main: Repeating from top of main while loop[0m
+[0;32mI (7225457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7242457) main: Repeating from top of main while loop[0m
+[0;32mI (7242457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7259457) main: Repeating from top of main while loop[0m
+[0;32mI (7259457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7276457) main: Repeating from top of main while loop[0m
+[0;32mI (7276457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7293457) main: Repeating from top of main while loop[0m
+[0;32mI (7293457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7310457) main: Repeating from top of main while loop[0m
+[0;32mI (7310457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7327457) main: Repeating from top of main while loop[0m
+[0;32mI (7327457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7344457) main: Repeating from top of main while loop[0m
+[0;32mI (7344457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7361457) main: Repeating from top of main while loop[0m
+[0;32mI (7361457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7378457) main: Repeating from top of main while loop[0m
+[0;32mI (7378457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7395457) main: Repeating from top of main while loop[0m
+[0;32mI (7395457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7412457) main: Repeating from top of main while loop[0m
+[0;32mI (7412457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7429457) main: Repeating from top of main while loop[0m
+[0;32mI (7429457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7446457) main: Repeating from top of main while loop[0m
+[0;32mI (7446457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7463457) main: Repeating from top of main while loop[0m
+[0;32mI (7463457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7480457) main: Repeating from top of main while loop[0m
+[0;32mI (7480457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7497457) main: Repeating from top of main while loop[0m
+[0;32mI (7497457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7514457) main: Repeating from top of main while loop[0m
+[0;32mI (7514457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7531457) main: Repeating from top of main while loop[0m
+[0;32mI (7531457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7548457) main: Repeating from top of main while loop[0m
+[0;32mI (7548457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7565457) main: Repeating from top of main while loop[0m
+[0;32mI (7565457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7582457) main: Repeating from top of main while loop[0m
+[0;32mI (7582457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7599457) main: Repeating from top of main while loop[0m
+[0;32mI (7599457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7616457) main: Repeating from top of main while loop[0m
+[0;32mI (7616457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7633457) main: Repeating from top of main while loop[0m
+[0;32mI (7633457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7650457) main: Repeating from top of main while loop[0m
+[0;32mI (7650457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7667457) main: Repeating from top of main while loop[0m
+[0;32mI (7667457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7684457) main: Repeating from top of main while loop[0m
+[0;32mI (7684457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7701457) main: Repeating from top of main while loop[0m
+[0;32mI (7701457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7718457) main: Repeating from top of main while loop[0m
+[0;32mI (7718457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7735457) main: Repeating from top of main while loop[0m
+[0;32mI (7735457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7752457) main: Repeating from top of main while loop[0m
+[0;32mI (7752457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7769457) main: Repeating from top of main while loop[0m
+[0;32mI (7769457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7786457) main: Repeating from top of main while loop[0m
+[0;32mI (7786457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7803457) main: Repeating from top of main while loop[0m
+[0;32mI (7803457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7820457) main: Repeating from top of main while loop[0m
+[0;32mI (7820457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7837457) main: Repeating from top of main while loop[0m
+[0;32mI (7837457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7854457) main: Repeating from top of main while loop[0m
+[0;32mI (7854457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7871457) main: Repeating from top of main while loop[0m
+[0;32mI (7871457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7888457) main: Repeating from top of main while loop[0m
+[0;32mI (7888457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7905457) main: Repeating from top of main while loop[0m
+[0;32mI (7905457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7922457) main: Repeating from top of main while loop[0m
+[0;32mI (7922457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7939457) main: Repeating from top of main while loop[0m
+[0;32mI (7939457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7956457) main: Repeating from top of main while loop[0m
+[0;32mI (7956457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7973457) main: Repeating from top of main while loop[0m
+[0;32mI (7973457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (7990457) main: Repeating from top of main while loop[0m
+[0;32mI (7990457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (8007457) main: Repeating from top of main while loop[0m
+[0;32mI (8007457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (8024457) main: Repeating from top of main while loop[0m
+[0;32mI (8024457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (8041457) main: Repeating from top of main while loop[0m
+[0;32mI (8041457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (8058457) main: Repeating from top of main while loop[0m
+[0;32mI (8058457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (8075457) main: Repeating from top of main while loop[0m
+[0;32mI (8075457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (8092457) main: Repeating from top of main while loop[0m
+[0;32mI (8092457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (8109457) main: Repeating from top of main while loop[0m
+[0;32mI (8109457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (8126457) main: Repeating from top of main while loop[0m
+[0;32mI (8126457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (8143457) main: Repeating from top of main while loop[0m
+[0;32mI (8143457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (8160457) main: Repeating from top of main while loop[0m
+[0;32mI (8160457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (8177457) main: Repeating from top of main while loop[0m
+[0;32mI (8177457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (8194457) main: Repeating from top of main while loop[0m
+[0;32mI (8194457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (8211457) main: Repeating from top of main while loop[0m
+[0;32mI (8211457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (8228457) main: Repeating from top of main while loop[0m
+[0;32mI (8228457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (8245457) main: Repeating from top of main while loop[0m
+[0;32mI (8245457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (8262457) main: Repeating from top of main while loop[0m
+[0;32mI (8262457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (8279457) main: Repeating from top of main while loop[0m
+[0;32mI (8279457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (8296457) main: Repeating from top of main while loop[0m
+[0;32mI (8296457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (8313457) main: Repeating from top of main while loop[0m
+[0;32mI (8313457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (8330457) main: Repeating from top of main while loop[0m
+[0;32mI (8330457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (8347457) main: Repeating from top of main while loop[0m
+[0;32mI (8347457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (8364457) main: Repeating from top of main while loop[0m
+[0;32mI (8364457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m
+[0;32mI (8381457) main: Repeating from top of main while loop[0m
+[0;32mI (8381457) 9x5shield: 9x5shield Message: HELLO 9X5 SHIELD![0m

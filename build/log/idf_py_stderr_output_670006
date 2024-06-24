@@ -1,0 +1,51 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyUSB1 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d881f: task_wdt_timeout_handling at /home/qcarver/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400d8be4: task_wdt_isr at /home/qcarver/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40082fd9: _xt_lowint1 at /home/qcarver/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d4d19: uart_tx_char at /home/qcarver/esp/v5.2.1/esp-idf/components/vfs/vfs_uart.c:163
+0x400d54e3: uart_write at /home/qcarver/esp/v5.2.1/esp-idf/components/vfs/vfs_uart.c:218
+0x400d4357: console_write at /home/qcarver/esp/v5.2.1/esp-idf/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d3ee2: esp_vfs_write at /home/qcarver/esp/v5.2.1/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400d9d01: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400ddc3b: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400dd5fe: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x400d9da9: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e5175: esp_log_writev at /home/qcarver/esp/v5.2.1/esp-idf/components/log/log.c:215
+0x4008b009: esp_log_write at /home/qcarver/esp/v5.2.1/esp-idf/components/log/log.c:225
+0x400d5e4a: showMessage at /home/qcarver/Dev/esp/9x5LedShield/main/9x5shield.c:82 (discriminator 1)
+0x400d5533: app_main at /home/qcarver/Dev/esp/9x5LedShield/main/main.c:23 (discriminator 1)
+0x400e4a18: main_task at /home/qcarver/esp/v5.2.1/esp-idf/components/freertos/app_startup.c:208
+0x400860c9: vPortTaskWrapper at /home/qcarver/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d881f: task_wdt_timeout_handling at /home/qcarver/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400d8be4: task_wdt_isr at /home/qcarver/esp/v5.2.1/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40082fd9: _xt_lowint1 at /home/qcarver/esp/v5.2.1/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d4d19: uart_tx_char at /home/qcarver/esp/v5.2.1/esp-idf/components/vfs/vfs_uart.c:163
+0x400d54e3: uart_write at /home/qcarver/esp/v5.2.1/esp-idf/components/vfs/vfs_uart.c:218
+0x400d4357: console_write at /home/qcarver/esp/v5.2.1/esp-idf/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d3ee2: esp_vfs_write at /home/qcarver/esp/v5.2.1/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400d9d01: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400ddc3b: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400dd5fe: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x400d9da9: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e5175: esp_log_writev at /home/qcarver/esp/v5.2.1/esp-idf/components/log/log.c:215
+0x4008b009: esp_log_write at /home/qcarver/esp/v5.2.1/esp-idf/components/log/log.c:225
+0x400d5e13: showMessage at /home/qcarver/Dev/esp/9x5LedShield/main/9x5shield.c:77 (discriminator 1)
+0x400d5533: app_main at /home/qcarver/Dev/esp/9x5LedShield/main/main.c:23 (discriminator 1)
+0x400e4a18: main_task at /home/qcarver/esp/v5.2.1/esp-idf/components/freertos/app_startup.c:208
+0x400860c9: vPortTaskWrapper at /home/qcarver/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0m
